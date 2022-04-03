@@ -1,0 +1,26 @@
+.accordion{
+  max-width: 1200px;
+  margin: auto;
+  &__action{
+    margin-top: 20px;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eee;
+    cursor: pointer;
+  }
+  &__content{
+    padding: 0 16px;
+    overflow: hidden;
+    max-height: 0;
+    background-color: white;
+    transition: max-height;
+    transition-duration: 237ms;
+    &--active{
+      overflow: visible;
+      max-height: 1000px;
+    }
+  }
+}
